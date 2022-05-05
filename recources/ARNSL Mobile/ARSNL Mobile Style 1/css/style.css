@@ -1,0 +1,713 @@
+    /*------------------------------------------------------------------
+[Master Stylesheet]
+
+Author: AtypicalThemes
+Template: ARSNL - Video Game landing page
+
+This file contains the styling for the actual theme, this
+is the file you need to edit to change the look of the
+theme.
+
+-------------------------------------------------------------------
+Table of contents
+
+    I.General
+    II.Header & Navigation
+    III.Hero Section
+    IV.About Section
+    V.Media Section
+    VI.Features Section
+    VII.CTA Section
+
+-------------------------------------------------------------------
+[Color codes]
+
+Background:	#FFF; (white)
+Content:	#222; (black)
+Footer:		#222;
+
+a (standard): #FFD012;
+a (hover): #FFD012;
+a (visited): #FFD012;	
+a (active):	#FFD012;
+
+[Colors]
+
+Primary Color: #222;
+Accent Color: #FFD012;
+-------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400'); /* Quicksand Font */
+
+/* --------------------------- /////////// I. GENERAL /////////// --------------------------- */
+/* -Color- */
+.colored {
+    color: #FFD012;
+}
+/* -Link Styling- */
+a {
+    color: #222;
+    font-family: Quicksand, sans-serif;
+	text-decoration: none;
+}
+a:visited {
+    color: #222;
+    text-decoration: none;
+}
+a:hover {
+    color: #333;
+	text-decoration: none;
+}
+a:active {
+    color: #222;
+    text-decoration: underline;
+}
+a:focus {
+    color: #222;
+    text-decoration: none;
+}
+/* -Resets- */
+html, body { 
+    color: #222;
+    font-size: 16px;
+    line-height: 1.5rem; /* 24px */
+    max-width: 100%;
+	overflow-x: hidden;
+}
+/* -Full width fluid container- */
+.full-width {
+    padding-left: 0;
+    padding-right: 0;
+}
+/* -Text Styling */
+h1,h2,h3,h4,h5,h6 {
+	font-family: Quicksand, sans-serif;
+    font-weight: 400;
+}
+h1 {
+    font-size: 1.875rem;
+} 
+h2 {
+    font-size: 1.5rem;
+}
+h3 {
+    font-size: 1.25rem;
+}
+p {
+    font-family: Quicksand, sans-serif;
+    font-size: 0.9375rem; /* 15px */
+    padding: 5px 5px 5px 0;
+    margin: 0;
+    font-weight: 400;
+}
+.strong {
+    font-weight: bold;
+}
+.spaced {
+    letter-spacing: 5px;
+}
+.subtle {
+	color: #999;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+/* -Margins and Floats- */
+.floated-left {
+     float: left;
+}
+.floated-right {
+    float: right;
+}
+.inline {
+	display: inline;
+}
+.tiny-margin {
+    margin-bottom: 3em /* 32px */
+}
+.small-margin {
+	margin-bottom: 6em; /* 96px */
+}
+.medium-margin {
+	margin-bottom: 8em; /* 128px */
+}
+.large-margin {
+	margin-bottom: 12em; /* 192px */
+}
+/* -hr- */
+hr {
+    width: 100%;
+    height: 1px;
+    background: #FFD012;
+    margin: 10px 0;
+}
+/* -General Button Styles */
+button {
+    outline: none !important;
+}
+.button {
+    height: auto;
+    width: 150px;
+    margin: 20px auto;
+    padding: 10px 15px;
+    font-family: Quicksand, sans-serif;
+    font-weight: bold;
+    color: #222;
+    border: 2px solid #333;
+    border-radius: 4px;
+    background: none;
+	display: inline-block;
+    outline: none;
+	transition: all 0.2s ease;
+    cursor: pointer;
+    text-align: center;
+}
+.button:visited {
+    color: #222;
+}
+.button:hover {
+    text-decoration: none;
+    color: #FFF;
+    background: #333;
+}
+.button:focus {
+    color: #FFF;
+}
+/* - Cookies Notification - */
+.cookies-bar {
+    background: #f0f0f0;
+    height: auto;
+    width: 100vw;
+    position: fixed;
+    bottom: -60px;
+    border-top: 1px solid #FFD012;
+    z-index: 10;
+    transition: 0.4s;
+}
+.cookies-wrapper {
+    position: relative;
+    padding: 15px 40px;
+}
+.cookies-bar.open {
+    transform: translateY(-60px);
+}
+.cookies-bar.closed {
+    transform: translateY(60px);
+}
+.cookies-bar p {
+    display: inline;
+}
+.cookies-bar a {
+    text-decoration: underline;
+}
+.cookies-bar .button {
+    display: block;
+    position: absolute;
+    top: 25%;
+    right: 35px;
+    margin: 0;
+    height: 30px;
+    width: 30px;
+    padding: 0;
+    font-size: 1.4rem;
+    color: #333;
+    background: none;
+    border: none;
+}
+.cookies-bar .button:hover {
+    color: #FFD012 !important;
+}
+/* RESPONSIVE STYLES */
+@media (max-width : 769px) {
+    .tiny-margin {
+    margin-bottom: 1.5em;
+}
+    .small-margin {
+	margin-bottom: 3em; 
+}
+    .medium-margin {
+	margin-bottom: 4em; 
+}
+    .large-margin {
+	margin-bottom: 6em; 
+}
+    .cookies-wrapper {
+        padding: 15px 60px 15px 20px;
+    }
+    .cookies-bar .button {
+        top: 30%;
+    }
+}
+/* --------------------------- /////////// II. HEADER AND NAVIGATION /////////// --------------------------- */
+#main-logo {
+    color: #222;
+    font-family: Quicksand, sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+.navbar-light {
+    height: auto;
+    background-color: #FFF;
+    border: none;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0,0,0,.5);
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #222;
+}
+/* Menu bars for mobile */
+.navbar-toggler {
+    border: none;
+    cursor: pointer;
+}
+#hamburger .icon-bar {
+    display: block;
+    height: 2px;
+    width: 25px;
+    background: #222;
+    margin: 7px 0;
+    transition: .3s ease-in-out;
+}
+/* Dropdown Menu */
+.navbar-collapse .dropdown-menu {
+	margin-top: 8px;
+	border: none;
+	background: #FFF; 
+    border-radius: 0;
+}
+.navbar-collapse .dropdown-item {
+	color: rgba(0,0,0,.5);
+	text-decoration: none;
+}
+.navbar-collapse .dropdown-item:hover {
+	background: none; 
+}
+.navbar-collapse .dropdown-item .item-text {
+	font-size: 0.875rem;
+}
+.navbar-collapse .dropdown-item:hover .item-text {
+	color: #222;
+}
+.navbar-collapse .dropdown-items-divide-hr {
+	width: 100%;
+	height: 1px;
+	margin: 0.25rem auto 0.25rem auto;
+	border: none;
+	background-color: #999;
+	opacity: 0.2;
+}
+/* - Mobile menu animation - */
+#hamburger .icon-bar:nth-child(1) {
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+#hamburger .icon-bar:nth-child(2) {
+   -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+#hamburger .icon-bar:nth-child(3) {
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+#hamburger.open .icon-bar:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+#hamburger.open .icon-bar:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+}
+#hamburger.open .icon-bar:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/* --------------------------- /////////// III. HERO SECTION /////////// --------------------------- */
+/* -Hero Image- */
+.hero-unit {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(../images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 720px;
+}
+.hero-caption {
+    position: relative;
+    width: auto;
+    height: auto;
+    margin-top: 40vh;
+    text-align: center;
+}
+.hero-caption p {
+    font-size: 1.5rem;
+}
+.hero-caption h1 {
+    font-size: 5rem;
+}
+.underline {
+    width: 50%;
+    height: 2px;
+    background: #222;
+    margin: 10px auto;
+}
+/* -RESPONSIVE STYLES- */
+@media (min-width : 1366px) {
+    .hero-unit {
+        height: 100vh;
+    }
+}
+/* --------------------------- /////////// IV. ABOUT SECTION /////////// --------------------------- */
+.store-buttons li {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    background: #121212;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+.store-buttons {
+    margin: 3em 0 6em 0;
+}
+.store-buttons li a {
+    color: #fff;
+    transition: 0.3s;
+}
+.store-buttons li i {
+    display: inline;
+    float: left;
+    margin-right: 10px;
+}
+.store-buttons li p {
+    display: inline-block;
+    font-size: 1.3rem;
+    font-weight: bold;
+    white-space: nowrap;
+}
+.store-buttons li:hover {
+    background: #fcdc4b;
+}
+.store-buttons li:hover a {
+    color: #222;
+}
+.video-box img {
+    display: block;
+    height: auto;
+    width: 60%;
+    margin: 0 auto;
+}
+.reviews {
+    margin: 6em 0;
+}
+.reviews div {
+    display: inline-block;
+    margin: 0 25px;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.overlay img {
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    top: 30%;
+}
+.overlay h2 {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 65%;
+    color: #FFF;
+}
+/* RESPONSIVE STYLES */
+@media (max-width : 996px){
+    .overlay h2 {
+        font-size: 1rem;
+    }
+    .reviews div {
+        margin: 15px 25px;
+    }
+}
+@media (max-width : 769px) {
+    .store-buttons li {
+        display: block;
+        width: auto;
+        margin: 15px auto;
+    }
+    .store-buttons li i {
+        float: none;
+    }
+    .store-buttons {
+        margin: 2em 3em;
+    }
+    .overlay img {
+        left: 10%;
+    }
+    .reviews {
+        margin: 3em 0;
+    }
+    .reviews div {
+        margin: 1em 25px;
+    }
+    .video-box img {
+        width: 80%;
+    }
+}
+/* --------------------------- /////////// V. MEDIA SECTION /////////// --------------------------- */
+.gallery-item {
+    padding: 0 2.5px;
+}
+.grid-gallery .row {
+    margin: 0 0 5px 0;
+}
+.gallery-item img {
+    transition: 0.3s ease;
+}
+.gallery-item:hover img {
+    opacity: 0.6;
+}
+/* RESPONSIVE STYLES */
+@media (max-width : 769px) {
+    .gallery-item {
+        margin: 5px 0;
+    }
+    .grid-gallery .row {
+        margin: 0;
+    }
+}
+/* --------------------------- /////////// VI. FEATURES SECTION /////////// --------------------------- */
+.features img {
+    width: 60%;
+}
+.features ul {
+    font-family: Quicksand, sans-serif;
+    list-style-type: disc;
+    font-size: 0.975rem;
+    padding-left: 40px;
+    margin: 15px 0;
+}
+/* RESPONSIVE STYLES */
+@media (min-width : 765px) and (max-width : 996px) {
+    .features img {
+        width: 100%;
+    }
+}
+@media (max-width : 769px) {
+    .features img {
+        margin: 2rem 0;
+    }
+}
+/* --------------------------- /////////// VII. CTA SECTION /////////// --------------------------- */
+.cta h1 {
+    font-size: 5rem;
+}
+.cta h2 {
+    font-size: 1.2rem;
+}
+/* Newsletter */
+input {
+    width: 50%;
+    height: 45px;
+    border: none;
+    background: #f0f0f0;
+    padding: 0 0 0 20px;
+    outline: #333;
+}
+#newsletter-box .button {
+    vertical-align: top;
+    margin: 0;
+    height: 45px;
+}
+.text-danger {
+    font-family: Montserrat, sans-serif;
+    font-size: 1.3rem;
+    margin-top: 10px;
+}
+.text-success {
+    font-family: Montserrat, sans-serif;
+    font-size: 1.3rem;
+    margin-top: 10px;
+}
+/* --------------------------- /////////// EXTRAS /////////// --------------------------- */
+.social-links li {
+    display: inline-block;
+    margin: 10px 20px;
+}
+.social-links li a i {
+    transition: 0.2s;
+}
+.social-links li a :hover {
+    color: #fcdc4b;
+}
+/* --------------------------- /////////// FOOTER /////////// --------------------------- */
+#footer {
+    width: 100%;
+    min-height: 50px;
+    height: auto;
+    color: #AAA;
+    background: #222;
+    border-top: 1px solid #FFD012;
+    padding: 0;
+    font-size: 14px;
+    line-height: 20px;
+}
+#footer ul {
+    margin: 10px 0;
+}
+#footer ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+#footer ul li a {
+    color: #AAA;
+}
+#footer ul li a:hover {
+    color: #fcdc4b;
+}
+.brands {
+    text-align: center;
+}
+.brands img {
+    margin: 20px 0;
+}
+#copyright {
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 10px;
+}
+#copyright a {
+    color: #AAA;
+    text-decoration: underline;
+}
+/* --------------------------- /////////// X. EXTRA PAGES /////////// --------------------------- */
+.extra-page {
+    font-size: 0.875rem;
+}
+.extra-page a {
+    color: #ecc424;
+}
+.extra-page a:hover {
+    color: #ecc424;
+    text-decoration: underline;
+    text-decoration-color: #ecc424;
+}
+.extra-page h3 {
+    font-weight: bold;
+}
+.extra-page .button:hover {
+    text-decoration: none;
+    color: #FFF;
+}
+.extra-page .hero-unit {
+    min-height: 400px;
+    background: #FFF;
+    border: none;
+}
+.extra-page .hero-caption {
+    margin-top: 25vh;
+}
+.extra-page .hero-caption h1 {
+    font-size: 3.5rem;
+}
+.text-container ul {
+    list-style: circle;
+    margin-left: 40px;
+}
+.text-container ul li {
+    margin: 5px 0;
+}
+.text-container ol li {
+    margin: 5px 0;
+}
+.breadcrumb-nav {
+    background: #F0F0F0;
+    border: none;
+    height: 60px;
+}
+.breadcrumb {
+    border: none;
+    background: none;
+    margin: 0;
+    height: 60px;
+}
+.breadcrumb li {
+    padding-top: 5px;
+}
+#footer-extra {
+    color: #FFF;
+    border-top: 1px solid #ecc424;
+    background: #222; 
+}
+#footer-extra .row:first-child {
+    padding: 40px 0;
+}
+#footer-extra .social-links li a{
+    color: #FFF;
+}
+#footer-extra .social-links li {
+    margin: 0 15px 0 0;
+}
+.form-control-input {
+    width: 100%;
+}
+.form-control-select {
+    width: 100%;
+    height: 45px;
+    background: #F0F0F0;
+    border: none;
+    outline: #333;
+    color: #222;
+    padding: 0 0 0 20px;
+}
+.checkbox {
+    font-size: 14px;  
+}
+.checkbox input {
+    width: auto;
+    height: auto;
+    vertical-align: -5%;
+    margin-right: 0.375rem;
+}
+#privacyForm .button {
+    width: 100%;
+    margin-top: 0;
+    height: 50px;
+    font-size: 1.1rem;
+}
+.form-container {
+    padding-top: 2em;
+}
+/* -RESPONSIVE STYLES- */
+@media (max-width : 991px) {
+    #footer-extra .col-md-4 {
+        margin-bottom: 2em;
+        text-align: center;
+    }
+    #footer-extra .row:first-child {
+        padding: 40px 0 20px 0;
+    }
+}

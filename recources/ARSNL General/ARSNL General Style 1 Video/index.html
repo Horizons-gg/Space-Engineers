@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- META TAGS -->
+    <meta charset="utf-8">
+    <meta name="author" content="AtypicalThemes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"> 
+
+    <!-- WEBSITE TITLE & DESCRIPTION -->
+    <title>ARSNL - A landing page for games</title>
+    <meta name="description" content="Showcase your pc games in the best light">
+    <meta name="keywords" content="game, landing page, gaming, business, ps4, xbox, steam">
+
+    <!-- OG meta tags that improve the look of your post on social media -->
+    <meta property="og:site_name" content="" /><!--website name-->
+    <meta property="og:site" content="" /> <!--website link-->
+    <meta property="og:title" content=""/> <!--Post title-->
+    <meta property="og:description" content="" /> <!--Post description-->
+    <meta property="og:image" content="" /><!-- Image link (jpg only)-->
+    <meta property="og:url" content="" /> <!--where do you want your post to link to-->
+    <meta property="og:type" content="article" />
+
+    <!-- Favicon and Apple Icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+
+    <!-- STYLES -->
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link href="css/fontawesome.min.css" rel="stylesheet">
+    <link href="css/all.min.css" rel="stylesheet">
+    <!-- Video Modal -->
+    <link href="css/modal-video.min.css" rel="stylesheet">
+    <!-- Animations -->
+    <link href="css/animations.css" rel="stylesheet">
+    <!-- Lightbox -->
+    <link href="css/lightbox.min.css" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loader-wrapper">
+        <h1 class="loader-logo colored">A R S N L</h1>
+        <div id="progress"></div>
+        <h3 class="loader-text">LOADING</h3>
+    </div>
+    <!-- Cookies Notification -->
+    <div id="cookies">
+        <div class="cookies-bar">
+            <div class="cookies-wrapper">
+             <p>This website uses cookies to track visitors. Please see our <a href="privacy_policy.html">Privacy Policy</a> for more information.</p>
+            </div>
+            <button class="button" id="cookies-close">X</button>
+        </div>
+    </div>
+    <!-- //// HEADER //// -->
+    <header id="main-header">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+            <div class="container">
+                <!-- Site Logo -->
+                <a id="main-logo" class="navbar-brand" href="#"><span class="colored">/</span>ARSNL<span class="colored">\</span></a>
+                <!-- IMG Logo 
+                <img src="images/logo.png" id="main-logo" class="navbar-brand" alt="logo">
+                -->
+                <!-- Dropdown Button -->
+                <button id="hamburger" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                </button>
+                <!-- Navigation Links -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#media">Media</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#features">Features</a>
+                        </li>
+                        <!-- Dropdown Menu -->          
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle page-scroll" data-toggle="dropdown" href="#" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">Extras</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="terms_and_conditions.html"><span class="item-text">Terms &amp; Conditions</span></a>
+                                <div class="dropdown-items-divide-hr"></div>
+                                <a class="dropdown-item" href="privacy_policy.html"><span class="item-text">Privacy Policy</span></a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cta">Purchase</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header><!-- Header End -->
+
+    <!-- /// HERO SECTION /// -->
+    <section id="hero-section">
+        <div class="row hero-unit">
+            <div class="hero-overlay"></div>
+            <video autoplay loop muted poster="images/poster.jpg" id="bgvid" class="img-fluid">
+                <source src="images/bg-vid.mp4" type="video/mp4"><!-- your video goes here -->
+            </video>
+            <div class="container">
+                <div class="hero-caption"><!-- Main Tagline -->
+                    <img src="images/headline.png" class="img-fluid headline" alt="source code">
+                    <a href="#" class="button">BUY NOW</a>
+                </div>
+            </div>
+        </div>
+    </section><!-- Hero Section End -->
+    
+    <!-- /// ABOUT SECTION /// -->
+    <section id="about-section" class="full-width">
+        <a id="about"></a><!-- Nav anchor -->
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-md-12">
+                    <h1 class="short-hr-left">THE GAME</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mi eros, scelerisque vitae diam eu, malesuada pellentesque sapien. Aenean faucibus nisl lacus, non finibus mauris pulvinar et. Sed ultrices laoreet est, id gravida lorem tincidunt at.</p>
+                    <p>Cras in mauris augue. Nulla eu tellus arcu. Duis aliquet sit amet tortor eget vestibulum. Pellentesque nunc libero, scelerisque vitae tristique id, maximus sed turpis.</p>    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- /// FEATURES SECTION /// -->
+    <section id="features-section">
+        <div class="container-fluid">
+            <a id="features"></a><!-- Nav anchor -->
+            <div class="row features text-center">
+                <div class="col-md-4 feature-card">
+                    <h2 class="short-hr-center">EXPLORE</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mi eros, scelerisque vitae diam eu, Aenean faucibus nisl lacus, non.</p>
+                </div>
+                <div class="col-md-4 feature-card">
+                    <h2 class="short-hr-center">UPGRADE</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mi eros, scelerisque vitae diam eu, Aenean faucibus nisl lacus, non.</p>
+                </div>
+                <div class="col-md-4 feature-card">
+                    <h2 class="short-hr-center">DOMINATE</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mi eros, scelerisque vitae diam eu, Aenean faucibus nisl lacus, non.</p>
+                </div>
+            </div>
+            <div class="row extra-features">
+                <div class="col-xl-4 col-md-12 text-center d-flex align-items-end">
+                    <img src="images/character1.png" class="img-fluid animation-element slide-in-left">
+                </div>
+                <div class="col-xl-8 col-md-12">
+                    <h2 class="short-hr-left">HITACHI CORP</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et convallis lorem, sed molestie nibh. Nam et accumsan ligula. Aliquam erat volutpat. Donec venenatis porta ligula ac placerat.
+                    Cras in mauris augue. Nulla eu tellus arcu. Duis aliquet sit amet tortor eget vestibulum.</p>
+                </div> 
+            </div>
+            <div class="row extra-features right">
+                <div class="col-xl-8 col-md-12">
+                    <h2 class="short-hr-right">NEO YAKUZA</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et convallis lorem, sed molestie nibh. Nam et accumsan ligula. Aliquam erat volutpat. Donec venenatis porta ligula ac placerat.
+                    Cras in mauris augue. Nulla eu tellus arcu. Duis aliquet sit amet tortor eget vestibulum.</p>
+                </div>
+                <div class="col-xl-4 col-md-12 text-center d-flex align-items-end">
+                    <img src="images/character2.png" class="img-fluid animation-element slide-in-right">
+                </div>
+            </div>
+            <div class="row extra-features">
+                <div class="col-xl-4 col-md-12 text-center d-flex align-items-end">
+                    <img src="images/character3.png" class="img-fluid animation-element slide-in-left">
+                </div>
+                <div class="col-xl-8 col-md-12">
+                    <h2 class="short-hr-left">NIGHT MOTHERS</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et convallis lorem, sed molestie nibh. Nam et accumsan ligula. Aliquam erat volutpat. Donec venenatis porta ligula ac placerat.
+                    Cras in mauris augue. Nulla eu tellus arcu. Duis aliquet sit amet tortor eget vestibulum.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- /// MEDIA SECTION /// -->
+    <section id="media-section">
+        <a id="media"></a><!-- Nav Anchor -->
+        <div class="grid-gallery">
+            <div class="row">
+                <div class="col-md-4 gallery-item">
+                    <a href="images/img.jpg" data-lightbox="studio_gallery">
+                        <div class="overlay"></div>
+                        <img src="images/placeholder.jpg" data-src="images/img.jpg" class="img-fluid b-lazy" alt="">
+                    </a>
+                </div>
+                <div class="col-md-4 gallery-item">
+                    <a href="images/img.jpg" data-lightbox="studio_gallery">
+                        <div class="overlay"></div>
+                        <img src="images/placeholder.jpg" data-src="images/img.jpg" class="img-fluid b-lazy" alt="">
+                    </a>
+                </div>
+                <div class="col-md-4 gallery-item">
+                    <a href="images/img.jpg" data-lightbox="studio_gallery">
+                        <div class="overlay"></div>
+                        <img src="images/placeholder.jpg" data-src="images/img.jpg" class="img-fluid b-lazy" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 gallery-item">
+                    <a href="images/img.jpg" data-lightbox="studio_gallery">
+                        <div class="overlay"></div>
+                        <img src="images/placeholder.jpg" data-src="images/img.jpg" class="img-fluid b-lazy" alt="">
+                    </a>
+                </div>
+                <div class="col-md-4 gallery-item">
+                    <a href="images/img.jpg" data-lightbox="studio_gallery">
+                        <div class="overlay"></div>
+                        <img src="images/placeholder.jpg" data-src="images/img.jpg" class="img-fluid b-lazy" alt="">
+                    </a>
+                </div>
+                <div class="col-md-4 gallery-item">
+                    <a href="images/img.jpg" data-lightbox="studio_gallery">
+                        <div class="overlay"></div>
+                        <img src="images/placeholder.jpg" data-src="images/img.jpg" class="img-fluid b-lazy" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- /// CTA SECTION /// -->
+    <section id="cta-section" class="full-width">
+        <a id="cta"></a><!-- Nav Anchor -->
+        <div class="container">
+            <div class="row tiny-margin cta-card">
+                <div class="col-md-6">
+                    <img src="images/game.png" class="img-fluid game-box animation-element slide-in-left">
+                </div>
+                <div class="col-md-6">
+                    <h1>JOIN<br>THE<br>FIGHT</h1>
+                    <a class="button" href="#">BUY NOW</a>
+                    <p data-toggle="modal" data-target="#systemreq" class="modal-expand">System Requirements</p>
+                </div>
+                <!-- System Requirements Modal -->
+                <div class="modal fade" id="systemreq" tabindex="-1" role="dialog" aria-labelledby="system requirements" aria-hidden="true">
+                  <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h2 class="modal-title" id="system requirements">SYSTEM REQUIREMENTS</h2>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                          <h3>Minimum System Requirements</h3>
+                          <ul>
+                            <li><b>CPU:</b> Intel CPU Core i5-2500K 3.3GHz / AMD CPU Phenom II X4 940</li>
+                            <li><b>RAM:</b> 6 GB</li>
+                            <li><b>OS:</b> 64-bit Windows 7 or 64-bit Windows 8 (8.1)</li>
+                            <li><b>VIDEO CARD:</b> Nvidia GPU GeForce GTX 660 / AMD GPU Radeon HD 7870</li>
+                            <li><b>FREE</b> DISK SPACE: 40 GB</li>
+                          </ul>
+                          <br>
+                          <h3>Recommended System Requirements</h3>
+                          <ul>
+                            <li><b>CPU:</b> Intel CPU Core i7 3770 3.4 GHz / AMD CPU AMD FX-8350 4 GHz</li>
+                            <li><b>RAM:</b> 8 GB</li>
+                            <li><b>OS:</b> 64-bit Windows 7 or 64-bit Windows 8 (8.1)</li>
+                            <li><b>VIDEO CARD:</b> Nvidia GPU GeForce GTX 770 / AMD GPU Radeon R9 290</li>
+                            <li><b>FREE</b> DISK SPACE: 40 GB</li>
+                          </ul>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="button modal-btn" data-dismiss="modal">CLOSE</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <img src="images/platforms.png" class="img-fluid platforms">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- /// DLC SECTION /// -->
+    <section id="dlc-section" class="full-width">
+        <div class="container">
+            <div class="row tiny-margin">
+                <div class="col-xl-6">
+                    <img src="images/dlc.jpg" class="img-fluid">
+                </div>
+                <div class="col-xl-6">
+                    <div class="dlc-card">
+                        <h2 class="short-hr-left">SUPERNOVA DLC</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mi eros, scelerisque vitae diam eu, malesuada pellentesque sapien. Aenean faucibus nisl lacus, non finibus mauris pulvinar et. Sed ultrices laoreet est, id gravida lorem tincidunt at.</p>
+                        <a class="button" href="#">BUY ON PS4</a>
+                        <a class="button" href="#">BUY ON XB1</a>
+                        <a class="button" href="#">BUY ON PC</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-6">
+                    <img src="images/dlc.jpg" class="img-fluid">
+                </div>
+                <div class="col-xl-6">
+                    <div class="dlc-card">
+                        <h2 class="short-hr-left">REBIRTH DLC</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mi eros, scelerisque vitae diam eu, malesuada pellentesque sapien. Aenean faucibus nisl lacus, non finibus mauris pulvinar et. Sed ultrices laoreet est, id gravida lorem tincidunt at.</p>
+                        <a class="button" href="#">BUY ON PS4</a>
+                        <a class="button" href="#">BUY ON XB1</a>
+                        <a class="button" href="#">BUY ON PC</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="extras" class="full-width">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <img src="images/headline.png" class="img-fluid headline" alt="source code">
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="row tiny-margin">
+                        <div class="col-md-12">
+                            <h1>STAY IN TOUTCH</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam venenatis tortor ut facilisis semper. Pellentesque dignissim sem in tincidunt aliquet.</p>
+                        </div>
+                    </div>
+                    <div id="newsletter-box" class="row tiny-margin">
+                        <div class="col-md-12">
+                            <h3>NEWSLETTER</h3>    
+                            <form id="newsletter" data-toggle="validator">
+                                <input type="email" id="emailsign" placeholder="Your Email Address"> <!-- Email Field -->
+                                <button type="submit" id="form-signup" class="button">SUBSCRIBE</button>
+                                <div id="msgSignup" class="h3 text-center hidden"></div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row social">
+                        <div class="col-md-12">
+                            <ul class="social-links"> <!-- Social Media Icons -->
+                                <li><a href="#"><i class="fab fa-facebook-f fa-lg icon-social"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter  fa-lg icon-social"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram fa-lg icon-social"></i></a>
+                                <li><a href="#"><i class="fab fa-youtube fa-lg icon-social"></i></a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- /// FOOTER /// -->
+    <div id="footer">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <div class="row brands">
+                        <div class="col-md-4">
+                            <a href="#">
+                                <img src="images/brand1.png" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#">
+                                <img src="images/brand2.png" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#">
+                                <img src="images/brand3.png" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                    <ul>
+                        <li><a href="privacy_policy.html">Privacy &amp; Cookie Policy</a></li>
+                        <li><a href="terms_and_conditions.html">Terms &amp; Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <p id="copyright">&copy; ARSNL <span id="year"> </span> - Game Landing Page by <a href="#">Atypicalthemes</a></p><!-- Copyright Text -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- //// SCRIPTS //// -->
+    <script src="js/jquery-3.4.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/blazy.min.js"></script>
+    <script src="js/jquery-modal-video.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/validator.min.js"></script>
+    <script src="js/arsnl.js"></script>
+</body>
+</html>

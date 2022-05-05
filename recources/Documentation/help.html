@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>A R S N L Documentation</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <a href="#" class="sidebar-brand">
+                    <img src="img/logo.png">
+                </a>
+                <li>
+                    <a href="#start">Start</a>
+                </li>
+                <li>
+                    <a href="#components">File Structure</a>
+                </li>
+                <li>
+                    <a href="#setup">Setting Up</a>
+                </li>
+                <li>
+                    <a href="#html">HTML Structure</a>
+                </li>
+                <li>
+                    <a href="#sections">Sections</a>
+                </li>
+                <li>
+                    <a href="#customization">Customization</a>
+                </li>
+                <li>
+                    <a href="#credits">Resources Used</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row section" style="height: 100vh;">
+                    <a id="start"></a>
+                    <h1>INTRODUCTION</h1>
+                    <hr>
+                     <div class="col-lg-8">
+                        <h3>Hello and Thank you for choosing A R S N L.</h3>
+                        <br>
+                        <p>A R S N L is the perfect template for independed developers and studios to showcase their games in a sleek, professional and eye-catching manner.</p>
+                         <p>Built for efficinecy and smoothness with HTML5, CSS3, PHP and Javascript on the Bootstrap 4 framework.</p>
+                         <p>You can edit the template CSS files using any text editor but for the best experience we recommend <a href="http://brackets.io/" target="_blank">Brackets</a> or <a href="https://notepad-plus-plus.org/" target="_blank">Notepad++</a></p>
+                         <br>
+                         <h3>What's Included:</h3>
+                         <ul>
+                             <li><p>8 fully functional HTML templates;</p></li>
+                             <li><p>Terms &amp; Conditions and Privacy Policy Pages included in every template;</p></li>
+                             <li><p>FontAwesome icon pack included;</p></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4">
+                        <h5 class="text-right">Created: 11/07/2019</h5>
+                        <h5 class="text-right">Author: <a href="http://atypicalthemes.com/" target="_blank">Atypical Themes</a></h5>
+                    </div>
+                </div>
+                <div class="row section">
+                    <a id="components"></a>
+                    <h1>FILE STRUCTURE</h1>
+                    <hr>
+                    <div class="col-lg-12">
+                        <p>The main template folder contains the following:</p>
+                        <p><b>A R S N L Mobile</b> and <b>A R S N L General</b> folders each contain 2 template Styles with Video variants for a total of 4 templates each;</p>
+                        <p>Each template folder contains and <b>index.html</b> file, <b>Privacy Policy</b> html file and <b>Terms &amp; Conditions</b> html file along with the following folders:</p>
+                        <ul>
+                            <li><p><b>CSS</b> - Bootstrap, the main template stylesheet and other css files.</p></li>
+                            <li><p><b>Fonts</b> - FontAwesome Icon font.</p></li>
+                            <li><p><b>Images</b> - Image files and favicons.</p></li>
+                            <li><p><b>Js</b> - Javascript files for bootstrap, smoothscroll, contact-form, animations, lightbox and template custom javascript file arsnl.js</p></li>
+                            <li><p><b>Php</b> - Php scripts for contact and newsletter forms.</p></li>
+                        </ul>
+                        <p><b>Dobucmentation</b> is where you found this help file.</p>
+                    </div>
+                </div>
+                <br>
+                <div class="row section">
+                    <div class="col-lg-12">
+                    <a id="setup"></a>
+                    <h1>SETTING UP THE TEMPLATE</h1>
+                    <hr>
+                    <h4>Adding Images:</h4>
+                    <p>The template contains two types of images: Embeded and imported with CSS</p>
+                    <p>For embeded images copy your custom images into the <b>images</b> folder and add them to the tempalte by editing the img link inside the template.</p>
+                    <p>An image link looks like this in the code:</p>
+                       <pre class="prettyprint linenums">
+                       
+&#x3C;img src="imgages/yourimage.jpg" class="img-fluid" alt=" "&#x3E;
+                       </pre> 
+                    <p>There are also background images imported with CSS like this:</p>
+                        <pre class="prettyprint linenums">
+                       
+background-image: linear-gradient(90deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0) 100%), url(../images/bg1.jpg);
+                       </pre> 
+                    <p>For those images you simply have to copy your custom image inside the "images" folder and change "url(../images/bg1.jpg)" to your image name.</p>
+                    <p>As you can see the image has a gradient applied to it that you can change the <b>color</b> [rgba(0,0,0)], <b>angle</b> (90deg) or <b>opacity</b> (0.9, 0.7 etc) of as you wish.</p>
+                    <br>
+                    <h4>Setting up the fullscreen video:</h4>
+                    <p>The video included in the template is an mp4 video with 1280x720 resolution at 29fps. The supported video formats are <b>mp4</b> ,     <b>WebM</b> and <b>ogg</b>.</p>
+                    <p>When using video, loading times are very important so try to find a ballance between quality and size and limit your video to under 30mb in size.</p>
+                    <p>Place your video file inside the <b>images</b> folder. Open <b>index.html</b> with a text editor and navigate to the hero section, here you will find the following lines of code:</p>
+                    <pre class="prettyprint linenums">
+                    
+&#x3C;video autoplay loop poster="images/poster.jpg" id="bgvid" class="img-fluid"&#x3E;
+    &#x3C;source src="images/bgvid.mp4" type="video/mp4"&#x3E;
+&#x3C;/video&#x3E;
+                    </pre>
+                    <p>Now replace <b>bgvid.mp4</b> with the name of your video file and also change "mp4" in the line <b>type="video/mp4"</b>  with ogg or webm if you are using one of those formats.</p>
+                    <p>If the video cannot be loaded the template will load a poster image instead. So create a .jpg image file and name it <b>poster.jpg</b> and paste it in the <b>images</b> folder.</p>
+                    <p>By default the video will autoplay and loop, defined by the <b>autoplay</b> and <b>loop</b> parameters inside the video tag.</p>
+                    <br>
+                    <h4>Newsletter &amp; Privacy Policy Forms</h4>
+                    <p>To reviece emails from the privacy form change the line $EmailTo = "youremail@domain.com" to your desired email adress in the <b>privacyform-process.php</b> file. </p>
+                    <p>In order to recieve emails from the newsletter form simply repeat the process inside the <b>newsletter-process.php</b> file this time. </p>
+                    <br>
+                    <p>If you want to change the input filed names you will have to update them in the following files:</p>
+                    <ul>
+                        <li>index.html, arsnl.js, form-process.php</li>
+                    </ul>
+                </div>
+            </div>
+                <div class="row section">
+                    <div class="col-lg-12">
+                    <a id="html"></a>
+                    <h1>HTML STRUCTURE</h1> 
+                    <hr>
+                    <h4>The <b>index.html</b> file looks like this:</h4>
+                    <pre class="prettyprint linenums">
+                    
+&#x3C;!DOCTYPE html&#x3E;
+    &#x3C;html&#x3E;
+    &#x3C;head&#x3E;
+      ...
+    &#x3C;/head&#x3E;
+        &#x3C;body&#x3E;
+            &#x3C;!-- Loading Screen --&#x3E;
+            &#x3C;div id="loader-wrapper"&#x3E;
+                &#x3C;div id="loader"&#x3E;&#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;!-- HEADER --&#x3E;
+            &#x3C;header id="main-header"&#x3E;            
+              ...
+            &#x3C;/header&#x3E;
+            &#x3C;section id="...section"&#x3E;         
+              ...
+            &#x3C;/section&#x3E;
+            &#x3C;!-- FOOTER --&#x3E;
+            &#x3C;footer id="main-footer"&#x3E;       
+              ...
+            &#x3C;/footer&#x3E;
+        &#x3C;/body&#x3E;
+    &#x3C;/html&#x3E;
+                    </pre>
+
+                <div class="row section">
+                    <a id="sections"></a>
+                    <h1>SECTIONS</h1>
+                    <hr>
+                    <div class="col-lg-12">
+                        <p>Each template is divided into the following sections and subsections:</p>
+                        <ul>
+                            <li><p><b>Hero</b> Section</p></li>
+                            <li><p><b>About</b> Section</p></li>
+                            <li><p><b>Media</b> Section</p></li>
+                            <li><p><b>Features</b> Section</p></li>
+                            <li><p><b>CTA</b> Section</p></li>
+                            <li style="margin-left: 15px;"><p>- Newsletter</p></li>
+                        </ul>
+                        <br>
+                        <h4>A section looks like this:</h4>
+                        <pre class="prettyprint linenums">
+                        
+    &#x3C;div id="about-section" class="large-margin"&#x3E;
+        ...
+        ...
+        ...
+    &#x3C;/div&#x3E;
+                        </pre>
+                        <p>The "large-margin" class sets the bottom margin of the section.</p>
+                        <br>
+                        <p>You can customize section margins individualy, these margin classes can be used to modify the bottom margin of each section:</p>
+                        <ul style="margin-top: 20px; margin-bottom: 20px;">
+                            <li><b>tiny-margin</b></li>
+                            <li><b>small-margin</b></li>
+                            <li><b>medium-margin</b></li>
+                            <li><b>large-margin</b></li>
+                        </ul>
+                        <p>The value for each class varies by tempalte and you can change the value of each margin class by going into the <b>style.css</b> file.</p>
+                        <p><b>!Note that the em and rem values in this template are calculated for a 16px base font-size!</b></p>
+                        <p>You can change the base font-size of the template by opening style.css and navigating to the "body" class.</p>
+                        <br>
+                     </div>
+                </div>
+                <div class="row section">
+                    <div class="col-lg-12">
+                        <a id="customization"></a>
+                        <h1>CUSTOMIZATION</h1>
+                        <hr>  
+                        <h4>Changing Colors</h4>
+                        <p>The easiest way to change the main color of the template is this:</p>
+                        <ol>
+                            <li><p>Open style.css with your prefered text editor;</p></li>
+                            <li><p>Press Ctrl+F (Cmd + F on mac) on your keyboard to bring up the search bar;</p></li>
+                            <li><p>Type "colored" into the search bar, it sould take you to a line with a color code like so:</p>
+                            <pre class="prettyprint linenums">
+                            
+    .colored {
+        color: #d71414;
+        }
+                            </pre>
+                            <li><p>Copy the color code (in this case #d71414;), press Ctrl+F once again to bring up the search bar and paste the color code in there;</p></li>
+                            <li><p>This should highlight all the instances of that color inside the style.css file.</p></li>
+                            <li><p>Now you can just replace the color codes with your prefered hex color.</p></li>
+                        </ol>
+                        <p>Alternatively in some text editor programs you can press Ctrl+H to bring up a search &amp; replace bar in which you can paste and replace the hex color codes.</p>
+                        <br>
+                        
+                        <h4>Cookie Notification Popup</h4>
+                        <p>The template features a notification pop up that informs users if your site uses cookies.</p>
+                        <p>The pop-up is enabled by default in every template.</p>
+                        <p><b>In order to disable the notification we simply need to open the arsnl.js file inside the js folder and look for the following lines:</b></p>
+                        <img src="img/img2.jpg " style="margin: 10px 0;">
+                        <p><b>Now simply delete or comment out the code (by adding // in fornt of each line).</b></p>
+                        <br>
+                        
+                        <h4>Emveded Videos</h4>
+                        <p>A R S N L features embeded videos such as trailers in different parts of the template</p>
+                        <p><b>First we need to get the video id by clicking the share button on the video we want to embed and copying the link ID likes so:</b></p>
+                        <img src="img/img3.jpg" style="margin: 10px 0;">
+                        <p><b>Now we need to paste the video ID into our video element inside the index.html file:</b></p>
+                        <img src="img/img4.jpg" style="margin: 10px 0;">
+                        <br><br>
+                        <br>
+                        <h4>Social Media</h4>
+                        <p>If you want to control the way the posts look like when you share the landing page on social media (Facebook, Google+ and LinkedIn especially) don't forget to update the OG Meta Tags</p>
+                        <p>To add more social icons in the footer please the footer section in the index.html file accordingly and add your preferred icons from the <a href="http://fontawesome.io/icons/" target="_blank">FontAwesome library</a>.</p>
+                        <br>
+                        <h4>Image Overlays</h4>
+                        <p>Certain background images in every template (including the video) have an opacity filter over then to improve readability.</p>
+                        <p><b>To change the value of this filter look for the backgroun-image property of each image in style.css and edit the linear gradient value (it can range from 0.1 to 1)</b></p>
+                        <pre class="prettyprint linenums">
+                        
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../images/hero.jpg);
+                        </pre>
+                        <br>
+                        <p><b>Example:</b></p>
+                        <div class="col-md-6">
+                            <img src="img/overlay1.jpg" style="margin-bottom: 5px;">
+                            <p>0.2 Opacity</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="img/overlay2.jpg" style="margin-bottom: 5px;">
+                            <p>0.8 Opacity</p>
+                        </div>
+                </div>
+            </div>
+                <div class="row section">
+                    <div class="col-lg-12">
+                        <a id="credits"></a>
+                        <h1>RESOURCES USED</h1>
+                        <hr>
+                        <p>Fonts - <a href="https://fonts.google.com/specimen/Montserrat" target="_blank">Montserrat</a>, <a href="https://fonts.google.com/specimen/Nanum+Gothic" target="_blank">Nanum Gothic</a>, <a href="https://fonts.google.com/specimen/Quicksand" target="_blank">Quicksand</a>, <a href="https://fonts.google.com/specimen/Noto+Sans" target="_blank">Noto Sans</a> and <a href="https://www.behance.net/gallery/33704618/ANURATI-Free-font?utm_source=the-webdesigner.co&utm_medium=newsletter" target="_blank">Anurati Free Font</a> by Emmeran Richard</p>
+                        <p>Icons - <a href="http://fontawesome.io/" target="_blank">FontAwesome</a></p>
+                        <p><a href="http://getbootstrap.com/" target="_blank">Bootstrap 4</a></p>
+                        <p><a href="http://lokeshdhakar.com/projects/lightbox2/#examples" target="_blank">Lightbox</a></p>
+                        <p><a href="https://github.com/1000hz/bootstrap-validator" target="_blank">Bootstrap Validator</a></p>
+                        <p><a href="https://www.toptal.com/designers/subtlepatterns/" target="_blank">Subtlepatterns</a></p>
+                        <p><a href="http://dinbror.dk/blog/blazy/" target="_blank">bLazy load image script</a></p>
+                        <p><a href="https://appleple.github.io/modal-video/" target="_blank">Jquery Modal Video</a></p>
+                        <p><a href="http://jquery.com/download/" target="_blank">JQuery 3.4.0</a></p>
+                        <br>
+                    </div>
+                </div>
+                <div class="row section">
+                    <div class="col-lf-12">
+                        <a id="support"></a>
+                        <h1>SUPPORT</h1>
+                        <hr>
+                        <p>For any support questions or suggestions please feel free to email us at <a href="support@atypicalthemes.com">support@atypicalthemes.com</a> </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <hr>
+                    <p class="subtle" style="margin-bottom: 0;">A R S N L Game Stuio Template by <a href="http://atypicalthemes.com/" traget="_blank">AtypicalThemes</a></p>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <!-- Google Prettify Script -->
+     <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=css&amp;skin=sons-of-obsidian"></script>
+    
+    <!-- Smooth Scroll -->  
+     <script src="js/scroll.js"></script>
+
+
+</body>
+
+</html>
