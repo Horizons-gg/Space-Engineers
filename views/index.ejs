@@ -70,12 +70,18 @@
                             <a class="nav-link" href="#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#media">Media</a>
+                            <a class="nav-link" href="#regions">Regions</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#features">Features</a>
+                            <a class="nav-link" href="#limits">Block Limits</a>
                         </li>
-                        <!-- Dropdown Menu -->          
+                        <li class="nav-item">
+                            <a class="nav-link" href="#classes">Ship Classes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#rules">Rules</a>
+                        </li>
+                        <!-- Dropdown Menu -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle page-scroll" data-toggle="dropdown" href="#" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">Extras</a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -103,7 +109,21 @@
             <div class="container">
                 <div class="hero-caption"><!-- Main Tagline -->
                     <img src="images/headline.png" class="img-fluid headline" alt="source code">
-                    <a href="#" class="button">PLAY NOW</a>
+
+                    <% if (locals.user) { %>
+
+                        <% if (!locals.user.discord.id) { %>
+                            <a href="/auth/discord" class="button">LINK DISCORD</a>
+                        <% } %>
+
+                        <% if (!locals.user.patreon.id) { %>
+                            <a href="/auth/patreon" class="button">LINK PATREON</a>
+                        <% } %>
+
+                    <% } else { %>
+                        <a href="/auth/steam" class="button">LINK ACCOUNT</a>
+                    <% } %>
+
                 </div>
             </div>
         </div>
@@ -126,7 +146,7 @@
     <!-- /// FEATURES SECTION /// -->
     <section id="features-section">
         <div class="container-fluid">
-            <a id="features"></a><!-- Nav anchor -->
+            <a id="regions"></a><!-- Nav anchor -->
             <div class="row features text-center">
                 <div class="col-md-4 feature-card">
                     <h2 class="short-hr-center">OCEANIA</h2>
@@ -142,31 +162,34 @@
                 </div>
             </div>
             <div class="row extra-features">
-                <div class="col-xl-4 col-md-12 text-center d-flex align-items-end">
-                    <img src="images/character1.png" class="img-fluid animation-element slide-in-left">
+                <a id="limits"></a><!-- Nav anchor -->
+                <div class="col-xl-4 col-md-12 text-center d-flex align-items-center">
+                    <img src="images/weapon.png" class="img-fluid animation-element slide-in-left">
                 </div>
                 <div class="col-xl-8 col-md-12">
-                    <h2 class="short-hr-left">HITACHI CORP</h2>
+                    <h2 class="short-hr-left">BLOCK LIMITS</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et convallis lorem, sed molestie nibh. Nam et accumsan ligula. Aliquam erat volutpat. Donec venenatis porta ligula ac placerat.
                     Cras in mauris augue. Nulla eu tellus arcu. Duis aliquet sit amet tortor eget vestibulum.</p>
                 </div> 
             </div>
             <div class="row extra-features right">
+                <a id="classes"></a><!-- Nav anchor -->
                 <div class="col-xl-8 col-md-12">
-                    <h2 class="short-hr-right">NEO YAKUZA</h2>
+                    <h2 class="short-hr-right">SHIP CLASSES</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et convallis lorem, sed molestie nibh. Nam et accumsan ligula. Aliquam erat volutpat. Donec venenatis porta ligula ac placerat.
                     Cras in mauris augue. Nulla eu tellus arcu. Duis aliquet sit amet tortor eget vestibulum.</p>
                 </div>
-                <div class="col-xl-4 col-md-12 text-center d-flex align-items-end">
-                    <img src="images/character2.png" class="img-fluid animation-element slide-in-right">
+                <div class="col-xl-4 col-md-12 text-center d-flex align-items-center">
+                    <img src="images/ship.png" class="img-fluid animation-element slide-in-right">
                 </div>
             </div>
             <div class="row extra-features">
-                <div class="col-xl-4 col-md-12 text-center d-flex align-items-end">
-                    <img src="images/character3.png" class="img-fluid animation-element slide-in-left">
+                <a id="rules"></a><!-- Nav anchor -->
+                <div class="col-xl-4 col-md-12 text-center d-flex align-items-center">
+                    <img src="images/gun.png" class="img-fluid animation-element slide-in-left">
                 </div>
                 <div class="col-xl-8 col-md-12">
-                    <h2 class="short-hr-left">NIGHT MOTHERS</h2>
+                    <h2 class="short-hr-left">RULES</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et convallis lorem, sed molestie nibh. Nam et accumsan ligula. Aliquam erat volutpat. Donec venenatis porta ligula ac placerat.
                     Cras in mauris augue. Nulla eu tellus arcu. Duis aliquet sit amet tortor eget vestibulum.</p>
                 </div>

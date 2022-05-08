@@ -6,6 +6,8 @@ process.env = require('./config.json')
 
 const fs = require('fs')
 
+const Patreon = require('./lib/patreon')
+
 
 
 //!
@@ -61,11 +63,29 @@ app.use(express.static('public'))
 //! Passport
 //!
 
+const Passport = require('passport')
+Passport.serializeUser((user, done) => done(null, user))
+Passport.deserializeUser((user, done) => done(null, user))
+
+const Passports = require('./lib/passports')
+
 
 
 //!
 //! Middleware
 //!
+
+app.use(async (req, res, next) => {
+
+    if (req.cookies.token) {
+        const User = await process.db.collection('users').findOne({ token: req.cookies.token })
+        if (User) res.locals.user = User
+        else res.cookie('token', null, { maxAge: 0 })
+    }
+
+    next()
+
+})
 
 
 
@@ -73,6 +93,32 @@ app.use(express.static('public'))
 //! Routes
 //!
 
+//? Main
 app.get('/', (req, res) => {
     res.render('index')
+})
+
+
+//? Authentication
+app.get('/auth/steam', Passport.authenticate('steam'))
+app.get('/auth/steam/callback', Passport.authenticate('steam', { failureRedirect: '/' }), (req, res) => {
+    res.cookie('token', req.user, { httpOnly: true, secure: process.env.secure, maxAge: 1000 * 60 * 60 * 24 * 14 }).redirect('/')
+})
+
+app.get('/auth/discord', Passport.authenticate('discord'))
+app.get('/auth/discord/callback', Passport.authenticate('discord', { failureRedirect: '/' }), async (req, res) => {
+    if (!res.locals.user) return res.redirect('/auth/steam')
+
+    await process.db.collection('users').updateOne({ _id: res.locals.user._id }, { $set: { discord: req.user } })
+    res.redirect('/')
+})
+
+app.get('/auth/patreon', (req, res) => res.redirect(`https://www.patreon.com/oauth2/authorize?response_type=code&client_id=${process.env.api.patreon.client_id}&redirect_uri=${process.env.api.patreon.callback_uri}&scope=users%20pledges-to-me`))
+app.get('/auth/patreon/callback', Patreon.Authorize)
+
+app.get('/auth/delete', async (req, res) => {
+    if (!res.locals.user) return res.send('You need to be logged in to delete your account!')
+
+    await process.db.collection('users').deleteOne({ _id: res.locals.user._id })
+    res.redirect('/')
 })

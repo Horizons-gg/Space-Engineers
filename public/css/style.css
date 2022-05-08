@@ -190,7 +190,7 @@ button {
 }
 .button {
     height: auto;
-    width: 150px;
+    width: 180px;
     margin: 20px auto;
     padding: 10px 15px;
     font-size: 1rem;
@@ -550,17 +550,17 @@ button {
 }
 /* -- EXTRA FEATURES --*/
 .extra-features {
-    background-image: linear-gradient(90deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0) 100%), url(../images/bg.jpg);
+    background-image: linear-gradient(90deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0) 100%), url(../images/construction.jpg);
     background-size: cover;
     border-bottom: 2px solid #000;
     background-attachment: fixed;
 }
 .extra-features:nth-of-type(3) {
-    background-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0.9) 100%), url(../images/bg.jpg);
+    background-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0.9) 100%), url(../images/battle.jpg);
     background-attachment: fixed;
 }
 .extra-features:nth-of-type(4) {
-    background-image: linear-gradient(90deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0) 100%), url(../images/bg.jpg);
+    background-image: linear-gradient(90deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0) 100%), url(../images/gate.jpg);
     background-attachment: fixed;
 }
 .extra-features img {
