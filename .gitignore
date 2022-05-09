@@ -128,3 +128,4 @@ dist
 
 #Custom
 config.json
+public/uploads/*

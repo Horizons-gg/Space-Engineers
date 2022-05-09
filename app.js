@@ -27,13 +27,23 @@ MongoClient.connect(`mongodb://${process.env.db.host}:${process.env.db.port}`, a
 //! Discord
 //!
 
-// const { Client, Intents } = require('discord.js')
-// var selectedIntents = []
-// for (intent in Intents.FLAGS) { selectedIntents.push(Intents.FLAGS[intent]) }
-// const client = new Client({ intents: selectedIntents })
-// client.login(process.env.api.discord.token)
-// client.on('ready', () => console.log(`Logged in as ${client.user.tag}!`))
-// process.client = client
+const { Client, Intents } = require('discord.js')
+var selectedIntents = []
+for (intent in Intents.FLAGS) { selectedIntents.push(Intents.FLAGS[intent]) }
+const client = new Client({ intents: selectedIntents })
+client.login(process.env.api.discord.token)
+client.on('ready', () => console.log(`Logged in as ${client.user.tag}!`))
+process.client = client
+
+client.on('interactionCreate', interaction => {
+
+    if (interaction.customId.includes('-')) var flag = interaction.customId.split('-')
+
+    if (interaction.isCommand()) return
+    if (interaction.isContextMenu()) return
+    if (interaction.isButton()) return require(`./Commands/ButtonCommands/${flag[0]}`)(interaction, flag)
+
+})
 
 
 
@@ -48,9 +58,11 @@ app.listen(process.env.port, () => console.log(`Listening on port ${process.env.
 
 const bodyParser = require('body-parser')
 const cookieParser = require('cookie-parser')
+const fileUpload = require('express-fileupload')
 
 app.use(bodyParser.json({ extended: true }))
 app.use(cookieParser())
+app.use(fileUpload())
 
 app.set('trust proxy', 'loopback')
 app.set('view engine', 'ejs')
@@ -83,6 +95,9 @@ app.use(async (req, res, next) => {
         else res.cookie('token', null, { maxAge: 0 })
     }
 
+    if (req.query.lang) if (['en', 'de'].includes(req.query.lang)) res.locals.lang = req.query.lang
+    else res.locals.lang = 'en'
+
     next()
 
 })
@@ -94,9 +109,30 @@ app.use(async (req, res, next) => {
 //!
 
 //? Main
-app.get('/', (req, res) => {
-    res.render('index')
+app.get('/', async (req, res) => {
+
+    const Uploads = await process.db.collection('uploads').find({ approved: true }).toArray()
+
+    let Images = []
+    for (let i = 0; i < 6; i++) {
+        const RandomFile = Uploads[Math.floor(Math.random() * Uploads.length)]
+        Images.push(RandomFile)
+    }
+
+    if (!Images[0]) Images = [{
+        _id: '0',
+        user: {
+            name: 'N/A',
+            profile: 'N/A'
+        }
+    }]
+
+    res.render('index', { Media: Images })
 })
+
+
+//? Upload
+app.post('/upload', require('./routes/uploads').Upload)
 
 
 //? Authentication
