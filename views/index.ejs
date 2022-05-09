@@ -208,9 +208,7 @@
                     <a href="/uploads/<%= upload._id %>.jpg" data-lightbox="studio_gallery">
                         <div class="overlay"></div>
 
-                        <div class="position-absolute d-flex align-items-center justify-content-end" style="right: 1.25rem; bottom: .2rem;">
-                            <a href="<%= upload.user.profile %>" target="_blank">@<%= upload.user.name %></a>
-                        </div>
+                        <a href="<%= upload.user.profile %>" target="_blank" class="position-absolute d-flex align-items-center justify-content-end" style="right: 1.25rem; bottom: .2rem;">@<%= upload.user.name %></a>
 
                         <img src="/uploads/<%= upload._id %>.jpg" data-src="/uploads/<%= upload._id %>.jpg" class="img-fluid b-lazy" alt="">
                     </a>
@@ -228,7 +226,7 @@
         <div class="container">
             <div class="row tiny-margin cta-card">
                 <div class="col-md-6">
-                    <img src="images/game.png" class="img-fluid game-box animation-element slide-in-left" >
+                    <img src="images/game.png" class="img-fluid game-box animation-element slide-in-left" style="max-height: 400px;" >
                 </div>
                 <div class="col-md-6">
                     <h1>UPLOAD<br>YOUR<br>MEDIA</h1>
