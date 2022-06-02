@@ -2,9 +2,10 @@
 //! Modules
 //!
 
-process.env = require('./config.json')
-
 const fs = require('fs')
+
+process.env = require('./config.json')
+const Blocklimits = require(process.env.blocklimits)
 
 const Patreon = require('./lib/patreon')
 
@@ -130,8 +131,16 @@ app.get('/', async (req, res) => {
     res.render('index', { Media: Images })
 })
 
+app.get('/limits', (req, res) => {
+    res.render('limits', Blocklimits)
+})
+
 app.get('/classes', (req, res) => {
     res.render('classes')
+})
+
+app.get('/creator', (req, res) => {
+    res.render('creator')
 })
 
 
@@ -169,3 +178,7 @@ app.get('/api/patreons', (req, res) => {
     if (req.query.secret !== process.env.secret) return res.send('Invalid secret!')
     process.db.collection('users').find(patreon.pledge)
 })
+
+
+//? 404
+app.get('*', (req, res) => res.status(404).send())
