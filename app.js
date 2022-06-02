@@ -130,6 +130,10 @@ app.get('/', async (req, res) => {
     res.render('index', { Media: Images })
 })
 
+app.get('/classes', (req, res) => {
+    res.render('classes')
+})
+
 
 //? Upload
 app.post('/upload', require('./routes/uploads').Upload)
@@ -157,4 +161,11 @@ app.get('/auth/delete', async (req, res) => {
 
     await process.db.collection('users').deleteOne({ _id: res.locals.user._id })
     res.redirect('/')
+})
+
+
+//? API
+app.get('/api/patreons', (req, res) => {
+    if (req.query.secret !== process.env.secret) return res.send('Invalid secret!')
+    process.db.collection('users').find(patreon.pledge)
 })

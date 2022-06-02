@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- META TAGS -->
+    <meta charset="utf-8">
+    <meta name="author" content="Horizons">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"> 
+
+    <!-- WEBSITE TITLE & DESCRIPTION -->
+    <title>Ship Classes - Horizons</title>
+    <meta name="description" content="Horizons is one of the Top Space Engineers Servers in the world showcasing an interlinked super cluster between Oceania, United States, and Europe!">
+    <meta name="keywords" content="space engineers, horizons, australia, united states, germany">
+
+    <!-- OG meta tags that improve the look of your post on social media -->
+    <meta property="og:site_name" content="" /><!--website name-->
+    <meta property="og:site" content="" /> <!--website link-->
+    <meta property="og:title" content=""/> <!--Post title-->
+    <meta property="og:description" content="" /> <!--Post description-->
+    <meta property="og:image" content="/images/ship.png" /><!-- Image link (jpg only)-->
+    <meta property="og:url" content="" /> <!--where do you want your post to link to-->
+    <meta property="og:type" content="article" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+
+    <!-- STYLES -->
+    <!-- Bootstrap -->
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link href="/css/fontawesome.min.css" rel="stylesheet">
+    <link href="/css/all.min.css" rel="stylesheet">
+    <!-- Video Modal -->
+    <link href="/css/modal-video.min.css" rel="stylesheet">
+    <!-- Animations -->
+    <link href="/css/animations.css" rel="stylesheet">
+    <!-- Lightbox -->
+    <link href="/css/lightbox.min.css" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link href="/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <%- include('./components/loader.ejs') %>
+
+    <!-- //// HEADER //// -->
+    <header id="main-header">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+            <div class="container">
+
+                <!-- IMG Logo -->
+                <a href="/"><img src="images/logo.png" id="main-logo" class="navbar-brand" alt="logo" width="150"></a>
+
+                <!-- Dropdown Button -->
+                <button id="hamburger" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                </button>
+
+                <!-- Navigation Links -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#media">Media</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#features">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cta">Purchase</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header><!-- Header End -->    
+    <div class="extra-page">
+        <!-- /// HERO SECTION /// -->
+        <section id="hero-section" class="extra-page">
+            <div class="row hero-unit">
+                <div class="container">
+                    <div class="row text-center">
+                        <div class="col-md-12">
+                            <div class="hero-caption"><!-- Main Tagline -->
+                                <h1>SHIP CLASSES</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- Hero Section End -->
+
+        <!-- Breadcrumbs -->
+        <nav aria-label="breadcrumb" class="small-margin breadcrumb-nav">
+            <div class="container">
+                <div class="row">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/">Landing</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Ship Classes</li>
+                    </ol>
+                </div>
+            </div>
+        </nav>
+
+        <section class="extra-page small-margin">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1">
+                        
+                        <div class="text-container tiny-margin">
+                            <h3>Overview</h3>
+                            <p>Ship Classes are an important aspect to our server, your ship/stations class will determine your <a href="/limits">Block Limits</a>, understanding how they work is essential!</p>
+                            <p>We have 3 Main Ship Classes that are easy to define;</p>
+                            <ul>
+                                <li>A Class - Stations</li>
+                                <li>B Class - Large Grid Ships</li>
+                                <li>C Class - Small Grid Ships</li>
+                            </ul>
+
+                            <br/>
+
+                            <p>Each Ship Class has 4 Sizes (1 - 4), this will usually be displayed as "B3 Class" etc. The class size is determined by the block count as followed;</p>
+                            <ul>
+                                <li>
+                                    <p>A Class - Stations</p>
+                                    <ul>
+                                        <li>A1 - Less than 1,000 Blocks</li>
+                                        <li>A2 - Less than 3,000 Blocks</li>
+                                        <li>A3 - Less than 8,000 Blocks</li>
+                                        <li>A4 - Greater than 8,000 Blocks</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p>B Class - Large Grid Ships</p>
+                                    <ul>
+                                        <li>B1 - Less than 750 Blocks</li>
+                                        <li>B2 - Less than 2,500 Blocks</li>
+                                        <li>B3 - Less than 7,500 Blocks</li>
+                                        <li>B4 - Greater than 7,500 Blocks</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p>C Class - Small Grid Ships</p>
+                                    <ul>
+                                        <li>C1 - Less than 250 Blocks</li>
+                                        <li>C2 - Less than 500 Blocks</li>
+                                        <li>C3 - Less than 1,000 Blocks</li>
+                                        <li>C4 - Greater than 1,000 Blocks</li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                        </div> <!-- end of text-container-->
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Breadcrumbs -->
+        <nav aria-label="breadcrumb" class="breadcrumb-nav">
+            <div class="container">
+                <div class="row">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/">Landing</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Ship Classes</li>
+                    </ol>
+                </div>
+            </div>
+        </nav>
+
+        <!-- /// FOOTER /// -->
+        <div id="footer-extra">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3>About Horizons</h3>
+                        <p>TBD</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Important Links</h3>
+                        <ul class="extra-links">
+                            
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Social Links</h3>
+                        <ul class="social-links"> <!-- Social Media Icons -->
+                            <li><a href="#"><i class="fab fa-discord icon-social"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-12">
+                        <p id="copyright">&copy; HORIZONS <span id="year"></span></p><!-- Copyright Text -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- //// SCRIPTS //// -->
+    <script src="js/jquery-3.4.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/blazy.min.js"></script>
+    <script src="js/jquery-modal-video.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/validator.min.js"></script>
+    <script src="js/arsnl.js"></script>    
+</body>
