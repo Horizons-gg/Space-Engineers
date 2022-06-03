@@ -1,0 +1,14 @@
+table {
+    width: 100%;
+    table-layout: fixed;
+    overflow-wrap: break-word;
+}
+
+.table-head {
+    border-bottom: 1px solid white;
+}
+
+.table-separator {
+    border-left: 1px solid white;
+    padding-left: 1rem;
+}

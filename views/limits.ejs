@@ -39,6 +39,7 @@
     <link href="/css/lightbox.min.css" rel="stylesheet">
     <!-- Main Stylesheet -->
     <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/table.css" rel="stylesheet">
 </head>
 <body>
 
@@ -75,71 +76,72 @@
 
         <section class="extra-page small-margin">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
 
-                        <table>
+                <h2>Player & Faction Limits</h2>
+                <table>
+                    <tr class="table-head">
+                        <th>Limit Name</th>
+                        <th class="table-separator">Player Limit</th>
+                        <th>Faction Limit</th>
+                    </tr>
 
-                            <tr>
-                                <th>Limit Name</th>
-                                <th>A Class</th>
-                                <th>B Class</th>
-                                <th>C Class</th>
-                                <th>D Class</th>
-                            </tr>
+                    <% GeneralLimits.forEach(Limit => { %>
+                        <tr>
+                            <th><%= Limit.name %></th>
 
-                            <% ClassLimits.forEach(Limit => { %>
-                                
-                                <th><%= Limit.name %></th>
+                            <th class="table-separator"><%= Limit.player || 'No Limits Set' %></th>
+                            <th><%= Limit.faction || 'No Limits Set' %></th>
+                        </tr>
+                    <% }) %>
+                </table>
 
-                                <% if (Limit.A) { %> <th>A Class | <%= Limit.A.join(' / ') %></th><% } %>
-                                <% if (Limit.B) { %> <th>B Class | <%= Limit.B.join(' / ') %></th><% } %>
-                                <% if (Limit.C) { %> <th>C Class | <%= Limit.C.join(' / ') %></th><% } %>
-                                <% if (Limit.D) { %> <th>D Class | <%= Limit.D.join(' / ') %></th><% } %>
-                            
-                            <% }) %>
+                <br/><br/><br/>
 
-                        </table>
-                        
-                        <div class="text-container tiny-margin">
-                            <h2>Ship Class Limits</h2><br/>
+                <h2 style="margin-bottom: 0;">Ship Class Limits</h2>
+                <p style="margin-bottom: 10px; padding-top: 0;">Learn more about Ship Classes <a href="/classes">here</a>.</p>
 
-                            <ul>
-                                <% ClassLimits.forEach(Limit => { %>
-                                
-                                    <li><%= Limit.name %></li>
+                <% 
+                    let Tags = {}
+                    ClassLimits.forEach(Limit => {
+                        if (!Limit.tag) {
+                            if (Tags['Other']) Tags['Other'].push(Limit)
+                            else Tags['Other'] = [Limit]
+                        } else {
+                            if (Tags[Limit.tag]) Tags[Limit.tag].push(Limit)
+                            else Tags[Limit.tag] = [Limit]
+                        }
+                    })
 
-                                    <ul>
-                                        <% if (Limit.A) { %> <li>A Class | <%= Limit.A.join(' / ') %></li><% } %>
-                                        <% if (Limit.B) { %> <li>B Class | <%= Limit.B.join(' / ') %></li><% } %>
-                                        <% if (Limit.C) { %> <li>C Class | <%= Limit.C.join(' / ') %></li><% } %>
-                                        <% if (Limit.D) { %> <li>D Class | <%= Limit.D.join(' / ') %></li><% } %>
-                                    </ul>
-                                
-                                <% }) %>
-                            </ul>
+                    for (const Tag in Tags) { CreateSection(Tags[Tag], Tag) }
+                %>
 
-                        </div>
-                        
-                    </div>
+                <% function CreateSection(Bundle, Name) { %>
 
-                    <div class="col-lg-6">
-                        
-                        <div class="text-container tiny-margin">
-                            <h2>Player & Faction Limits</h2><br/>
+                    <table style="margin-bottom: 3rem;">
 
-                            <ul>
-                                <% GeneralLimits.forEach(Limit => { %>
-                                
-                                    <li><%= Limit.name %> | <%= Limit.player %>x per Player - <%= Limit.faction %>x per Faction</li>
-                                
-                                <% }) %>
-                            </ul>
+                    <tr class="table-head">
+                        <th><%= Name %></th>
+                        <th class="table-separator">A Class</th>
+                        <th>B Class</th>
+                        <th>C Class</th>
+                        <th>D Class</th>
+                    </tr>
 
-                        </div>
-                        
-                    </div>
-                </div>
+                <% Bundle.forEach(Limit => { %>
+                    <tr>
+                        <th><%= Limit.name %></th>
+
+                        <% if (Limit.A) { %> <th class="table-separator"><%= Limit.A.join(' / ') %></th><% } else { %><th class="table-separator">No Limits Set</th><% } %>
+                        <% if (Limit.B) { %> <th><%= Limit.B.join(' / ') %></th><% } else { %><th>No Limits Set</th><% } %>
+                        <% if (Limit.C) { %> <th><%= Limit.C.join(' / ') %></th><% } else { %><th>No Limits Set</th><% } %>
+                        <% if (Limit.D) { %> <th><%= Limit.D.join(' / ') %></th><% } else { %><th>No Limits Set</th><% } %>
+                    </tr>
+                <% }) %>
+
+                    </table>
+
+                <% } %>
+
             </div>
         </section>
 
