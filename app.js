@@ -143,6 +143,10 @@ app.get('/creator', (req, res) => {
     res.render('creator')
 })
 
+app.get('/rules', (req, res) => {
+    res.render('rules')
+})
+
 
 //? Upload
 app.post('/upload', require('./routes/uploads').Upload)
