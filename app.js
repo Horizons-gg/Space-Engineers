@@ -147,6 +147,10 @@ app.get('/rules', (req, res) => {
     res.render('rules')
 })
 
+app.get('/vote', (req, res) => {
+    res.render('vote')
+})
+
 
 //? Upload
 app.post('/upload', require('./routes/uploads').Upload)
