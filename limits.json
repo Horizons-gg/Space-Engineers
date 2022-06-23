@@ -170,9 +170,9 @@
             "tag": "Productivity",
             "dangerous": false,
 
-            "A": [2, 4, 6, 8],
-            "B": [2, 3, 5, 6],
-            "C": [2, 3, 5, 6],
+            "A": [2, 4, 5, 6, 8],
+            "B": [2, 3, 4, 5, 6],
+            "C": [2, 3, 4, 5, 6],
             "D": [1, 2, 3, 4],
 
             "blocks": [
@@ -187,9 +187,9 @@
             "tag": "Productivity",
             "dangerous": false,
 
-            "A": [15, 20, 30, 40],
-            "B": [15, 18, 25, 30],
-            "C": [15, 18, 25, 30],
+            "A": [15, 20, 25, 30, 40],
+            "B": [15, 18, 22, 26, 30],
+            "C": [15, 18, 22, 26, 30],
             "D": null,
 
             "blocks": [
@@ -204,9 +204,9 @@
             "tag": "Productivity",
             "dangerous": false,
 
-            "A": [15, 20, 30, 40],
-            "B": [15, 18, 25, 30],
-            "C": [15, 18, 25, 30],
+            "A": [15, 20, 25, 30, 40],
+            "B": [15, 18, 22, 26, 30],
+            "C": [15, 18, 22, 26, 30],
             "D": [4, 6, 8, 10],
 
             "blocks": [
@@ -221,9 +221,9 @@
             "tag": "Productivity",
             "dangerous": false,
 
-            "A": [10, 20, 40, 80],
-            "B": [8, 16, 32, 64],
-            "C": [8, 16, 32, 64],
+            "A": [10, 20, 40, 60, 80],
+            "B": [8, 16, 32, 48, 64],
+            "C": [8, 16, 32, 48, 64],
             "D": [6, 10, 20, 40],
 
             "blocks": [
@@ -237,10 +237,10 @@
             "tag": "Operations",
             "dangerous": false,
 
-            "A": [4, 6, 12, 20],
-            "B": [3, 5, 10, 15],
-            "C": [3, 5, 10, 15],
-            "D": [2, 4, 8, 10],
+            "A": [4, 6, 10, 12, 20],
+            "B": [3, 5, 8, 12, 16],
+            "C": [3, 5, 8, 12, 16],
+            "D": [4, 6, 8, 10],
 
             "blocks": [
                 "ShipWelder"
@@ -256,10 +256,10 @@
             "tag": "Operations",
             "dangerous": false,
 
-            "A": [4, 6, 12, 20],
-            "B": [3, 5, 10, 15],
-            "C": [3, 5, 10, 15],
-            "D": [2, 4, 8, 10],
+            "A": [4, 6, 10, 12, 20],
+            "B": [3, 5, 8, 12, 16],
+            "C": [3, 5, 8, 12, 16],
+            "D": [4, 6, 8, 10],
 
             "blocks": [
                 "ShipGrinder"
@@ -272,9 +272,9 @@
             "tag": "Operations",
             "dangerous": false,
 
-            "A": [16, 16, 16, 30],
-            "B": [16, 16, 16, 30],
-            "C": [16, 16, 16, 30],
+            "A": [16, 16, 16, 20, 30],
+            "B": [16, 16, 16, 20, 30],
+            "C": [16, 16, 16, 20, 30],
             "D": [16, 16, 16, 16],
 
             "blocks": [
@@ -291,14 +291,14 @@
             "tag": "Operations",
             "dangerous": false,
 
-            "A": [1, 2, 3, 4],
-            "B": [1, 2, 2, 2],
-            "C": [1, 2, 2, 2],
+            "A": [1, 2, 3, 3, 4],
+            "B": [1, 2, 2, 2, 2],
+            "C": [1, 2, 2, 2, 2],
             "D": null,
 
             "blocks": [
-                "Drill/Large_Drill_Tier",
-                "Drill/ModCubeBlockLargeMegaDrill"
+                "Drill/LittleBastard",
+                "Drill/FatBastard"
             ],
             "exceptions": []
         },
@@ -308,9 +308,9 @@
             "tag": "Power Production",
             "dangerous": false,
 
-            "A": [6, 12, 24, 42],
-            "B": [6, 10, 18, 26],
-            "C": [6, 10, 18, 26],
+            "A": [6, 12, 20, 30, 42],
+            "B": [6, 10, 16, 20, 26],
+            "C": [6, 10, 16, 20, 26],
             "D": [10, 16, 20, 30],
 
             "blocks": [
@@ -324,9 +324,9 @@
             "tag": "Power Production",
             "dangerous": false,
 
-            "A": [40, 60, 80, 150],
-            "B": [40, 50, 70, 100],
-            "C": [40, 50, 70, 100],
+            "A": [40, 60, 80, 110, 150],
+            "B": [40, 50, 60, 80, 100],
+            "C": [40, 50, 60, 80, 100],
             "D": [10, 20, 30, 40],
 
             "blocks": [
@@ -340,9 +340,9 @@
             "tag": "Power Production",
             "dangerous": false,
 
-            "A": [20, 40, 60, 100],
-            "B": [20, 30, 60, 80],
-            "C": [20, 30, 60, 80],
+            "A": [20, 40, 60, 80, 100],
+            "B": [20, 30, 45, 65, 80],
+            "C": [20, 30, 45, 65, 80],
             "D": [4, 8, 16, 32],
 
             "blocks": [
@@ -356,9 +356,9 @@
             "tag": "Power Production",
             "dangerous": false,
 
-            "A": [5, 15, 30, 50],
-            "B": [5, 10, 20, 40],
-            "C": [5, 10, 20, 40],
+            "A": [5, 15, 25, 35, 50],
+            "B": [5, 10, 20, 30, 40],
+            "C": [5, 10, 20, 30, 40],
             "D": [2, 4, 8, 16],
 
             "blocks": [
@@ -372,9 +372,9 @@
             "tag": "Creativity",
             "dangerous": false,
 
-            "A": [10, 15, 25, 40],
-            "B": [8, 15, 20, 30],
-            "C": [8, 15, 20, 30],
+            "A": [10, 15, 22, 30, 40],
+            "B": [8, 15, 20, 25, 30],
+            "C": [8, 15, 20, 25, 30],
             "D": [6, 12, 16, 24],
 
             "blocks": [
@@ -388,9 +388,9 @@
             "tag": "Creativity",
             "dangerous": true,
 
-            "A": [2, 4, 8, 12],
-            "B": [2, 4, 6, 8],
-            "C": [2, 4, 6, 8],
+            "A": [2, 4, 6, 8, 12],
+            "B": [2, 4, 5, 6, 8],
+            "C": [2, 4, 5, 6, 8],
             "D": [1, 2, 4, 6],
 
             "blocks": [
@@ -404,9 +404,9 @@
             "tag": "Creativity",
             "dangerous": true,
 
-            "A": [4, 8, 16, 24],
-            "B": [4, 8, 12, 16],
-            "C": [4, 8, 12, 16],
+            "A": [4, 8, 12, 16, 24],
+            "B": [4, 8, 10, 12, 16],
+            "C": [4, 8, 10, 12, 16],
             "D": [4, 8, 12, 16],
 
             "blocks": [
@@ -422,9 +422,9 @@
             "tag": "Combat",
             "dangerous": false,
 
-            "A": [40, 90, 150, 250],
-            "B": [30, 80, 100, 200],
-            "C": [30, 80, 100, 200],
+            "A": [40, 90, 150, 200, 250],
+            "B": [30, 80, 100, 150, 200],
+            "C": [30, 80, 100, 150, 200],
             "D": [15, 25, 40, 60],
 
             "blocks": [
@@ -451,7 +451,7 @@
                 "LargeMissileTurret/ARYXSentinel",
                 "LargeMissileTurret/ARYXReaperPulseCannon",
                 "ConveyorSorter/ARYXMace",
-                "ConveyorSorter/AWE_WL_SuperLaser_Large_CB",
+                "ConveyorSorter/ARYXFocusLance",
                 "LargeMissileTurret/ARYX_FW_NovaBlaster",
                 "ConveyorSorter/AWE_MarkV_SuperLaser_Large_CB",
                 "ConveyorSorter/ARYXLargeRadar",
@@ -490,19 +490,20 @@
                 "SmallMissileLauncher/ARYX_Fixed_Chord_auto",
                 "ConveyorSorter/ARYXSmallFlechetteLauncher",
                 "LargeMissileTurret/ARYXFlakTurret",
-                "ConveyorSorter/ARYX_Small_Sidekick_Hangar"
+                "ConveyorSorter/ARYX_Small_Sidekick_Hangar",
+				"LargeMissileTurret/ARYXPulsarCannon"
             ],
             "exceptions": []
         },
 
         {
-            "name": "Atlas Superlaser",
+            "name": "Sunderer Heavy Lance",
             "tag": "Combat",
             "dangerous": false,
 
-            "A": [0, 1, 2, 3],
-            "B": [0, 1, 2, 2],
-            "C": [0, 1, 2, 2],
+            "A": [1, 1, 2, 3, 3],
+            "B": [1, 1, 2, 2, 2],
+            "C": [1, 1, 2, 2, 2],
             "D": null,
 
             "blocks": [
@@ -512,17 +513,33 @@
         },
 
         {
-            "name": "Mark-I Atlas Superlaser",
+            "name": "Hyperion Heavy Torpedo Launcher",
             "tag": "Combat",
             "dangerous": false,
 
-            "A": [1, 2, 4, 6],
-            "B": [1, 2, 3, 4],
-            "C": [1, 2, 3, 4],
+            "A": [1, 2, 4, 5, 6],
+            "B": [1, 2, 3, 4, 6],
+            "C": [1, 2, 3, 4, 6],
             "D": null,
 
             "blocks": [
-                "ConveyorSorter/AWE_MarkV_SuperLaser_Large_CB"
+                "LargeMissileTurret/ARYXHeavyTorpedoLauncher"
+            ],
+            "exceptions": []
+        },
+		
+		{
+            "name": "Predator-850 Coilgun",
+            "tag": "Combat",
+            "dangerous": false,
+
+            "A": [1, 2, 4, 5, 5],
+            "B": [1, 2, 4, 5, 5],
+            "C": [1, 2, 3, 4, 4],
+            "D": null,
+
+            "blocks": [
+                "ConveyorSorter/ARYXHeavyCoilgun"
             ],
             "exceptions": []
         },
@@ -532,9 +549,9 @@
             "tag": "Combat",
             "dangerous": false,
 
-            "A": [2, 4, 6, 8],
-            "B": [2, 3, 4, 6],
-            "C": [2, 3, 4, 5],
+            "A": [1, 2, 3, 4, 6],
+            "B": [1, 2, 3, 4, 6],
+            "C": [2, 3, 4, 5, 5],
             "D": null,
 
             "blocks": [
@@ -548,9 +565,9 @@
             "tag": "Combat",
             "dangerous": false,
 
-            "A": [2, 4, 6, 8],
-            "B": [2, 3, 4, 6],
-            "C": [2, 3, 4, 5],
+            "A": [2, 4, 6, 6, 8],
+            "B": [2, 2, 3, 4, 6],
+            "C": [2, 2, 3, 4, 6],
             "D": null,
 
             "blocks": [
@@ -560,13 +577,29 @@
         },
 
         {
+            "name": "Prometheus Focus Beam Lance",
+            "tag": "Combat",
+            "dangerous": false,
+
+            "A": [2, 4, 6, 6, 8],
+            "B": [2, 2, 3, 4, 6],
+            "C": [2, 2, 3, 4, 6],
+            "D": null,
+
+            "blocks": [
+                "ConveyorSorter/ARYXFocusLance"
+            ],
+            "exceptions": []
+        },
+
+        {
             "name": "Ares Gauss Cannon",
             "tag": "Combat",
             "dangerous": false,
 
-            "A": [2, 4, 6, 8],
-            "B": [2, 3, 4, 6],
-            "C": [2, 3, 4, 5],
+            "A": [2, 4, 6, 7, 8],
+            "B": [2, 3, 4, 5, 6],
+            "C": [2, 3, 3, 4, 5],
             "D": null,
 
             "blocks": [
@@ -580,9 +613,9 @@
             "tag": "Combat",
             "dangerous": false,
 
-            "A": [2, 4, 6, 8],
-            "B": [2, 3, 4, 6],
-            "C": [2, 3, 4, 5],
+            "A": [2, 4, 5, 6, 8],
+            "B": [2, 2, 3, 4, 6],
+            "C": [2, 2, 3, 4, 5],
             "D": null,
 
             "blocks": [
@@ -596,9 +629,9 @@
             "tag": "Combat",
             "dangerous": false,
 
-            "A": [4, 6, 9, 12],
-            "B": [4, 6, 8, 10],
-            "C": [4, 6, 8, 10],
+            "A": [2, 4, 6, 9, 12],
+            "B": [2, 4, 6, 8, 10],
+            "C": [2, 4, 6, 8, 10],
             "D": null,
 
             "blocks": [
@@ -612,9 +645,9 @@
             "tag": "Combat",
             "dangerous": false,
 
-            "A": [4, 6, 9, 12],
-            "B": [4, 6, 8, 10],
-            "C": [4, 6, 8, 10],
+            "A": [2, 4, 6, 9, 12],
+            "B": [2, 4, 6, 8, 10],
+            "C": [2, 4, 6, 8, 10],
             "D": null,
 
             "blocks": [
@@ -628,9 +661,9 @@
             "tag": "Combat",
             "dangerous": false,
 
-            "A": [4, 6, 9, 12],
-            "B": [4, 6, 8, 10],
-            "C": [4, 6, 8, 10],
+            "A": [2, 4, 6, 9, 12],
+            "B": [2, 4, 6, 8, 10],
+            "C": [2, 4, 6, 8, 10],
             "D": null,
 
             "blocks": [
@@ -644,9 +677,9 @@
             "tag": "Combat",
             "dangerous": false,
 
-            "A": [6, 10, 14, 16],
-            "B": [6, 8, 12, 14],
-            "C": [6, 8, 12, 14],
+            "A": [6, 10, 12, 14, 16],
+            "B": [6, 8, 10 ,12, 14],
+            "C": [6, 8, 10 ,12, 14],
             "D": null,
 
             "blocks": [
