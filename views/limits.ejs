@@ -68,7 +68,7 @@
                 <div class="row">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="/">Space Engineers</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Ship Classes</li>
+                        <li class="breadcrumb-item active" aria-current="page">Block Limits</li>
                     </ol>
                 </div>
             </div>
@@ -77,11 +77,12 @@
         <section class="extra-page small-margin">
             <div class="container">
 
-                <h2>Player & Faction Limits</h2>
+                <h2>Grid / Player / Faction Limits</h2>
                 <table>
                     <tr class="table-head">
                         <th>Limit Name</th>
-                        <th class="table-separator">Player Limit</th>
+                        <th class="table-separator">Grid Limit</th>
+                        <th>Player Limit</th>
                         <th>Faction Limit</th>
                     </tr>
 
@@ -89,8 +90,9 @@
                         <tr>
                             <th><%= Limit.name %></th>
 
-                            <th class="table-separator"><%= Limit.player || 'Restricted' %></th>
-                            <th><%= Limit.faction || 'Restricted' %></th>
+                            <th class="table-separator"><%= Limit.grid || '∞' %></th>
+                            <th><%= Limit.player || '∞' %></th>
+                            <th><%= Limit.faction || '∞' %></th>
                         </tr>
                     <% }) %>
                 </table>
@@ -151,7 +153,7 @@
                 <div class="row">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="/">Space Engineers</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Ship Classes</li>
+                        <li class="breadcrumb-item active" aria-current="page">Block Limits</li>
                     </ol>
                 </div>
             </div>
