@@ -517,6 +517,38 @@
                 "LargeMissileTurret/ARYXRailgunTurret"
             ],
             "exceptions": []
+        },
+
+        {
+            "name": "Vulcans Gatling Cannon",
+            "tag": "Combat",
+            "dangerous": false,
+
+            "A": [4, 6, 8, 10, 12],
+            "B": [4, 6, 8, 10, 12],
+            "C": [4, 6, 8, 10, 12],
+            "D": null,
+
+            "blocks": [
+                "LargeMissileTurret/ARYXVulcanTurret"
+            ],
+            "exceptions": []
+        },
+
+        {
+            "name": "Kaminari Thrusters",
+            "tag": "Thrusters",
+            "dangerous": false,
+
+            "A": [4, 6, 8, 10, 12],
+            "B": [4, 6, 8, 10, 12],
+            "C": [4, 6, 8, 10, 12],
+            "D": [4, 6, 8, 10],
+
+            "blocks": [
+                "Thrust/ARYLNX_Mega_Epstein_Drive"
+            ],
+            "exceptions": []
         }
 
     ]
