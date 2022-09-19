@@ -322,7 +322,9 @@
                 "ConveyorSorter/ARYXSmallFlechetteLauncher",
                 "LargeMissileTurret/ARYXFlakTurret",
                 "ConveyorSorter/ARYX_Small_Sidekick_Hangar",
-				"LargeMissileTurret/ARYXPulsarCannon"
+				"LargeMissileTurret/ARYXPulsarCannon",
+                "ConveyorSorter/ARYXLargeIonCannon",
+                "LargeMissileTurret/ARYX_FW_NovaBlaster"
             ],
             "exceptions": []
         },
@@ -355,6 +357,22 @@
 
             "blocks": [
                 "LargeMissileTurret/ARYXHeavyTorpedoLauncher"
+            ],
+            "exceptions": []
+        },
+
+        {
+            "name": "Centurion Ion Cannon",
+            "tag": "Combat",
+            "dangerous": false,
+
+            "A": [1, 2, 3, 4, 4],
+            "B": [1, 2, 3, 4, 4],
+            "C": [1, 2, 3, 4, 4],
+            "D": null,
+
+            "blocks": [
+                "ConveyorSorter/ARYXLargeIonCannon"
             ],
             "exceptions": []
         },
@@ -515,6 +533,57 @@
 
             "blocks": [
                 "LargeMissileTurret/ARYXRailgunTurret"
+            ],
+            "exceptions": []
+        },
+
+        {
+            "name": "Vulcans Gatling Cannon",
+            "tag": "Combat",
+            "dangerous": false,
+
+            "A": [4, 6, 8, 10, 12],
+            "B": [4, 6, 8, 10, 12],
+            "C": [4, 6, 8, 10, 12],
+            "D": null,
+
+            "blocks": [
+                "LargeMissileTurret/ARYXVulcanTurret"
+            ],
+            "exceptions": []
+        },
+
+        {
+            "name": "Nova Phase Blaster",
+            "tag": "Combat",
+            "dangerous": false,
+
+            "A": [10, 15, 30, 40, 40],
+            "B": [10, 15, 30, 40, 40],
+            "C": [10, 15, 30, 40, 40],
+            "D": null,
+
+            "blocks": [
+                "LargeMissileTurret/ARYX_FW_NovaBlaster"
+            ],
+            "exceptions": []
+        },
+
+
+
+
+        {
+            "name": "Kaminari Thrusters",
+            "tag": "Thrusters",
+            "dangerous": false,
+
+            "A": [4, 6, 8, 10, 12],
+            "B": [4, 6, 8, 10, 12],
+            "C": [4, 6, 8, 10, 12],
+            "D": [4, 6, 8, 10],
+
+            "blocks": [
+                "Thrust/ARYLNX_Mega_Epstein_Drive"
             ],
             "exceptions": []
         }
